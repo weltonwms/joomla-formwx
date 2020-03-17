@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset
+        name="details"
+        label="COM_FORMWX_CAMPO_DETAILS"
+    >
+        <field
+            name="id"
+            type="hidden"
+        />
+         <field
+            name="options"
+            id="options"
+            type="hidden"
+       	
+        />
+
+        <field
+            name="nome"
+            id="nome"
+            type="text"
+            label="COM_FORMWX_CAMPO_NOME_LABEL"
+            description="COM_FORMWX_CAMPO_NOME_DESC"
+            required="true"
+				
+        />
+        
+        
+        
+         <field
+            name="tipo"
+            id="tipo"
+            type="list"
+            label="COM_FORMWX_CAMPO_TYPE_LABEL"
+            description="COM_FORMWX_CAMPO_TYPE_DESC"
+            default="text"
+             required="true">
+             <option value="text">COM_FORMWX_CAMPO_TYPE_TEXT</option>
+             <option value="textarea">COM_FORMWX_CAMPO_TYPE_TEXT_AREA</option>
+             <option value="list">COM_FORMWX_CAMPO_TYPE_LIST</option>
+             <option value="radio">COM_FORMWX_CAMPO_TYPE_RADIO</option>
+             <option value="calendar">COM_FORMWX_CAMPO_TYPE_CALENDAR</option>
+             <option value="1">COM_FORMWX_CAMPO_TYPE_MAIL_OPTIONS</option>
+         
+         
+         </field>
+         
+         
+         
+             
+				
+       
+        
+        <field
+            name="rotulo"
+            id="rotulo"
+            type="text"
+            label="COM_FORMWX_CAMPO_ROTULO_LABEL"
+            description="COM_FORMWX_CAMPO_ROTULO_DESC"
+            required="true"
+				
+        />
+        
+         <field
+            name="descricao"
+            id="descricao"
+            type="text"
+            label="COM_FORMWX_CAMPO_DESCRICAO_LABEL"
+            description="COM_FORMWX_CAMPO_DESCRICAO_DESC"
+            
+				
+        />
+        
+        
+        <field
+            name="requerido"
+            id="requerido"
+            type="radio"
+            class="btn-group btn-group-yesno"
+            label="COM_FORMWX_CAMPO_REQUERIDO_LABEL"
+            description="COM_FORMWX_CAMPO_REQUERIDO_DESC"
+            default="1"
+        >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>       
+
+        <field
+            name="id_formulario"
+            id="id_formulario"
+            type="sql"
+            label="COM_FORMWX_CAMPO_ID_FORMULARIO_LABEL"
+            description="COM_FORMWX_CAMPO_ID_FORMULARIO_DESC"
+            query="SELECT id, nome FROM #__formwx_formulario"
+            key_field="id"
+            value_field="nome"
+            required="true"
+				
+        >
+               <option value="">COM_FORMWX_LABEL_SELECT</option>
+        </field>
+			
+    </fieldset>
+	
+	
+</form>
+
+

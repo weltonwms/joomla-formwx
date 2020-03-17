@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset
+		name="basic"
+		label="COM_FORMWX_CONFIG_BASIC_LABEL"
+		description="COM_FORMWX_CONFIG_BASIC_DESCRIPTION"
+		
+		>
+
+		<field
+			name="captch_ecc"
+			type="radio"
+			label="COM_FORMWX_CONFIG_CAPTCH_LABEL"
+			description="COM_FORMWX_CONFIG_CAPTCH_DESCRIPTION"
+			default="0"
+			class="btn-group btn-group-yesno"
+			>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		
+
+	</fieldset>
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+	>
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			validate="rules"
+			filter="rules"
+			component="com_formwx"
+			section="component"
+		/>
+	</fieldset>
+</config>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset
+        name="details"
+        label="COM_FORMWX_FORMULARIO_DETAILS"
+    >
+        <field
+            name="id"
+            type="hidden"
+        />
+        <field
+            name="nome"
+            id="nome"
+            type="text"
+            label="COM_FORMWX_FORMULARIO_NOME_LABEL"
+            description="COM_FORMWX_FORMULARIO_NOME_DESC"
+            size="40"
+            required="true"
+            default=""
+        />
+        <field
+            name="imagem"
+            id="imagem"
+            type="media"
+            label="COM_FORMWX_FORMULARIO_IMAGEM_LABEL"
+            description="COM_FORMWX_FORMULARIO_IMAGEM_DESC"
+
+        />
+
+        <field
+            name="email_to"
+            id="email_to"
+            type="text"
+            label="COM_FORMWX_FORMULARIO_EMAIL_TO_LABEL"
+            description="COM_FORMWX_FORMULARIO_EMAIL_TO_DESC"
+            class="validate-email"
+            required="true"
+
+        />
+
+
+
+        <field
+            name="informacoes"
+            id="informacoes"
+            type="editor"
+            filter="safehtml"
+            label="COM_FORMWX_FORMULARIO_INFORMACOES_LABEL"
+            description="COM_FORMWX_FORMULARIO_INFORMACOES_DESC"
+            buttons="false"
+
+        />
+
+
+
+
+
+
+
+
+    </fieldset>
+
+    <fieldset
+        name="advanced"
+        label="COM_FORMWX_ADVANCED"
+    >
+
+        <field
+            name="outras_informacoes"
+            id="outras_informacoes"
+            type="text"
+            label="COM_FORMWX_FORMULARIO_OUTRAS_INFORMACOES_LABEL"
+            description="COM_FORMWX_FORMULARIO_OUTRAS_INFORMACOES_DESC"
+            size="255"
+
+        />
+
+        <field
+            name="mail_from_auth"
+            type="radio"
+            label="COM_FORMWX_FORMULARIO_MAIL_FROM_AUTH_LABEL"
+            description="COM_FORMWX_FORMULARIO_MAIL_FROM_AUTH_DESC"
+            default="0"
+            class="btn-group btn-group-yesno"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        
+         <field
+            name="recibo"
+            type="radio"
+            label="COM_FORMWX_FORMULARIO_RECIBO_LABEL"
+            description="COM_FORMWX_FORMULARIO_RECIBO_DESC"
+            default="1"
+            class="btn-group btn-group-yesno"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+         <field
+            name="button_text"
+            id="button_text"
+            type="text"
+            label="COM_FORMWX_FORMULARIO_BUTTON_LABEL"
+            description="COM_FORMWX_FORMULARIO_BUTTON_DESC"
+
+        />
+
+
+
+        <field
+            name="feedback_message"
+            id="feedback_message"
+            type="editor"
+            filter="safehtml"
+            label="COM_FORMWX_FORMULARIO_FEEDBACK_MESSAGE_LABEL"
+            description="COM_FORMWX_FORMULARIO_FEEDBACK_MESSAGE_DESC"
+
+        />
+
+        <field
+            name="info_after_form"
+            id="info_after_form"
+            type="editor"
+            filter="safehtml"
+            label="COM_FORMWX_FORMULARIO_INFO_AFTER_LABEL"
+            description="COM_FORMWX_FORMULARIO_INFO_AFTER_DESC"
+
+        />
+
+    </fieldset>
+
+
+</form>
+

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="Formulário">
+        <message>COM_FORMWX_FORM_MESSAGE</message>
+    </layout>
+    <fields
+        name="request"
+        addfieldpath="/administrator/components/com_formwx/models/fields"
+    >
+        <fieldset name="request">
+            <field
+                name="id_formulario"
+                type="sql"
+                label="COM_FORMWX_REQUEST_ID_FORM_LABEL"
+                description="COM_FORMWX_REQUEST_ID_FORM_DESC"
+                query="SELECT id, nome FROM #__formwx_formulario "
+                key_field="id"
+                value_field="nome"
+                required="true"
+            >
+                <option value=''>COM_FORMWX_SELECT_OPTION</option>
+                           
+            </field>    
+        </fieldset>
+    </fields> 
+        
+<fields name="params">
+		<!-- Basic options. -->
+		<fieldset name="params"
+			label="COM_FORMWX_BASIC_OPTIONS_FIELDSET_LABEL"
+		>
+			<field name="tamanho_imagem"
+				type="list"
+				description="COM_FORMWX_FIELD_TAMANHO_IMAGEM_DESC"
+				label="COM_FORMWX_FIELD_TAMANHO_IMAGEM_LABEL"
+                                default="2"
+			>
+                                <option value="0">0</option>
+				<option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+				
+			</field>
+			<field name="tamanho_info"
+				type="list"
+				description="COM_FORMWX_FIELD_TAMANHO_INFO_DESC"
+				label="COM_FORMWX_FIELD_TAMANHO_INFO_LABEL"
+                                default="8"
+			>
+				<option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+				
+			</field>
+
+			
+		</fieldset>
+
+		
+	
+    </fields>
+</metadata>
+
