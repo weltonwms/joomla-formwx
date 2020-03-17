@@ -1,0 +1,18 @@
+<updates>
+	<update>
+		<name>WX Forms Component</name>
+		<description>Component for creating forms. Registered data is registered in the database and sent by email</description>
+		<element>com_formwx</element>
+		<type>component</type>
+		<version>2.0.0</version>
+		
+		<downloads>
+			<downloadurl type="full" format="zip">https://sourceforge.net/projects/wx-forms/files/latest/download</downloadurl>
+		</downloads>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<targetplatform name="joomla" version="3.[23456789]" />
+		<php_minimum>5.3.10</php_minimum>
+	</update>
+</updates>
